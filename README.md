@@ -3,7 +3,7 @@
 Non-scientific, somewhat real-world benchmark to test **Swift** vs **Python** performance.
 
 Standard test configuration: 
-  Using the same language-specific syntax/flow control...Increment an array of 10 **integers** 100 million times each.
+  Using the same language-specific syntax/flow control...Increment an array of 10 **integers** 10 million times each.
 
 # How to use
 
