@@ -7,3 +7,9 @@ Standard test configuration: Increment an array of 10 **integers** 100 million t
 # How to use
 
 Run **benchmark.sh** to run the benchmarks.
+
+# Preliminary Results
+
+Swift's compiler seems to optimize this iterative increment operation somehow, resulting in a near constant time to run this benchmark.
+
+Meanwhile, Python is unable to finish in a reasonable amount of time...
