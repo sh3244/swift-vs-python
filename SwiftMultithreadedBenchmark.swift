@@ -3,17 +3,15 @@
 import Foundation
 
 class FastThread: Thread {
+	let increment = 1
+
     init(_ array: inout [Int], index: Int, increments: Int) {
-    	var value = array[index]
-
-        for _ in 0..<increments { value += 1 }
-
-        array[index] = value
+        for _ in 0..<increments { array[index] += increment }
     }
 }
 
 var array: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
-_ = (0..<array.count).compactMap { FastThread(&array, index: $0, increments: 10000000000).start() }
+_ = (0..<array.count).compactMap { FastThread(&array, index: $0, increments: 100000000).start() }
 
 print(array)

@@ -24,7 +24,7 @@ printf "\n================================"
 printf "\nRunning Python Benchmark..."
 printf "Python Output:\n$( time ./python.sh )\n"
 
-printf "\n================================"
+# printf "\n================================"
 
-printf "\nRunning Swift Multithreaded Class Backed Benchmark..."
-printf "Swift Output:\n$( time ./swift_multithreaded_class_backed.sh )\n"
+# printf "\nRunning Swift Multithreaded Class Backed Benchmark..."
+# printf "Swift Output:\n$( time ./swift_multithreaded_class_backed.sh )\n"
