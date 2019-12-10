@@ -20,45 +20,44 @@ Meanwhile, Python is unable to finish in a reasonable amount of time...
 ### 1 Million increments each array item, Python takes too long for more, and Java doesn't support integers larger than that.
 
 ```
-Local-Computer:swift-vs-python sam$ ./benchmark.sh 
+sam$ ./benchmark.sh 
 
 Running Swift Benchmark...
-real	0m0.320s
-user	0m0.267s
-sys	0m0.045s
+real	0m0.321s
+user	0m0.262s
+sys	0m0.053s
 Swift Output:
 [1000001, 1000002, 1000003, 1000004, 1000005, 1000006, 1000007, 1000008, 1000009, 1000000]
 
 ================================
 Running Swift Multithreaded Benchmark...
-real	0m0.867s
-user	0m0.539s
-sys	0m0.266s
+real	0m0.706s
+user	0m0.506s
+sys	0m0.192s
 Swift Output:
 [1000001, 1000002, 1000003, 1000004, 1000005, 1000006, 1000007, 1000008, 1000009, 1000000]
 
 ================================
 Running Java Benchmark...
-real	0m0.651s
-user	0m1.120s
-sys	0m0.085s
+real	0m0.665s
+user	0m1.301s
+sys	0m0.102s
 Java Output:
-Hello, World
-1000001
+[1000001, 1000002, 1000003, 1000004, 1000005, 1000006, 1000007, 1000008, 1000009, 1000000]
 
 ================================
 Running Python Benchmark...
-real	0m1.510s
-user	0m1.478s
-sys	0m0.024s
+real	0m1.459s
+user	0m1.433s
+sys	0m0.021s
 Python Output:
 [1000001, 1000002, 1000003, 1000004, 1000005, 1000006, 1000007, 1000008, 1000009, 1000000]
 
 ================================
 Running C++ Benchmark...
-real	0m0.645s
-user	0m0.480s
-sys	0m0.058s
+real	0m0.545s
+user	0m0.451s
+sys	0m0.054s
 C++ Output:
-1000001 1000002 1000003 1000004 1000005 1000006 1000007 1000008 1000009 1000000
+[1000001, 1000002, 1000003, 1000004, 1000005, 1000006, 1000007, 1000008, 1000009, 1000000]
 ```
