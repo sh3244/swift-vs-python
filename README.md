@@ -15,7 +15,9 @@ Swift's compiler seems to optimize this iterative increment operation somehow, r
 
 Meanwhile, Python is unable to finish in a reasonable amount of time...
 
-# Example Results (1 Million increments each array item, python takes too long for more, and java doesn't support integers that large.)
+# Example Results
+
+### 1 Million increments each array item, Python takes too long for more, and Java doesn't support integers larger than that.
 
 ```
 Local-Computer:swift-vs-python sam$ ./benchmark.sh 
