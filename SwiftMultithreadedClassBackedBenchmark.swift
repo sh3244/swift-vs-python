@@ -122,7 +122,7 @@ class Operations {
 
 var array: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
-for j in 0..<100000000 {
+for j in 0..<1000000 {
     for i in 0..<array.count - 1 {
         Operations.shared.operationsQueue.addOperation(IncrementOperation(&array, index: i))
     }

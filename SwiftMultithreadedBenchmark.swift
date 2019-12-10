@@ -12,6 +12,6 @@ class FastThread: Thread {
 
 var array: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
-_ = (0..<array.count).compactMap { FastThread(&array, index: $0, increments: 100000000).start() }
+_ = (0..<array.count).compactMap { FastThread(&array, index: $0, increments: 1000000).start() }
 
 print(array)
