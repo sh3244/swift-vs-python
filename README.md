@@ -1,6 +1,6 @@
 # swift-vs-python
 
-Non-scientific, somewhat real-world benchmark to test **Swift** vs **Python** performance.
+Non-scientific, somewhat real-world benchmark to evaluate **Swift** vs **Python** performance. **Now expanding to include more common programming languages**
 
 Standard test configuration: 
   Using the same language-specific syntax/flow control...Increment an array of 10 **integers** 10 million times each.
