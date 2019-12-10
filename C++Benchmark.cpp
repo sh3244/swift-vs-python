@@ -1,7 +1,7 @@
 #include<iostream>
 #include <vector>
 
-#define TIMES 1000000  //add num times you want to run
+#define TIMES 10000000  //add num times you want to run
 
 using namespace std;
 
