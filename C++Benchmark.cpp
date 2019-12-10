@@ -44,8 +44,14 @@ int main() {
     setbuf(stdout, NULL);
     calcuC(v, 10);
     
-    for (const auto i: v)
-      cout << i << ' ';
+    cout << "[";
+    for (const auto i: v) {
+        if (i == v[v.size() - 1]) {
+            cout << i << "]";
+        } else {
+            cout << i << ", ";
+        }
+    }
       
     return 0;
 }
